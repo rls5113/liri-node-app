@@ -12,10 +12,10 @@ Once node and npm install is completed, run npm install to install packages requ
 
 1. LIRI responds to the following commands:
 
-   * `concert-this` followed by the band name for which you want to see when and where they play next
+   * `concert-this` followed by the band name for which you want to see when and where they play next. LIRI will return the upcoming show dates for the artist.
 
-   * `spotify-this-song` followed by the name of a song title.
+   * `spotify-this-song` followed by the name of a song title.  LIRI will return the song and artist information who performs the title from the spotify API.
 
-   * `movie-this` followed by the name of a movie to view basic information about you favorite movie.  If you cant decide, running this command with no parameters returns information about the movie, "Mr. Nobody".
+   * `movie-this` followed by the name of a movie to view basic information about you favorite movie.  LIRI will return movie information from OMDB API. If you cant decide, running this command with no parameters returns information about the movie, "Mr. Nobody".
 
    * `do-what-it-says` followed by anything will return information about the song, "I Want it That Way"
