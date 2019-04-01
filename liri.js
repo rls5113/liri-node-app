@@ -21,8 +21,12 @@ switch(param1){
     findConcert(param2);
     break;
   case "spotify-this-song":
-    console.log(param1+" "+param2);
-    searchSpotify(param2);
+  console.log(param1+" "+param2);
+  if(args[3]==null) {
+    console.log("param2 is null");
+    param2="The Sign";
+  }
+  searchSpotify(param2);
     break;
   case "movie-this":  
     console.log(param1+" "+param2);
@@ -85,10 +89,17 @@ function findMovie(movie) {
 };
 
 function searchSpotify(song) {
-
+  var offset = 0;
+  if(song === "The Sign") {
+    offset = 15;
+  }
+  console.log(offset);
   spotify.search({
     type: "track",
-    query: song
+    query: song,
+    offset: offset,
+    limit: 13
+
   }, function(err,data) {
     if(err) {
       return console.log("Error occurred: "+err);
