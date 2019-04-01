@@ -2,8 +2,8 @@
 LIRI (Language Interpretation and Recognition Interface)
 This command line interface (CLI) will take in specific actions and return limited results.
 
-Setup -  checkout the code by cloning the repository.  
-
+Setup -  checkout the code by cloning the repository at https://github.com/rls5113/liri-node-app.git.
+ 
 After cloning the repository, create a file named ".env" in project directory along with liri.js.  Inside this file, put these values for spotify.  SPOTIFY_ID=<your-spotify-id-number> and SPOTIFY_SECRET=<your-spotify-secret>.
 
 This command line program requires that node.js and npm be installed.  Refer to documentation for installation instructions.
